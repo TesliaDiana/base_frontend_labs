@@ -1,0 +1,135 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+h1, h2, h3 {
+    color: #1a252f;
+}
+
+.variant-table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.variant-table td {
+    border: 2px solid #222222;
+    padding: 15px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.row-1 {
+    background-color: #038f8f;
+    color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.row-2 {
+    background-color: #f5f503;
+    color: #111111;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.row-1:hover {
+    background-color: #f5f503;
+    color: #111111;
+}
+
+.row-2:hover {
+    background-color: #038f8f;
+    color: #ffffff;
+}
+
+.row-3, .row-4 {
+    background-color: #ffffff;
+}
+
+.shape {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #000000;
+    border-radius: 24px;
+    box-sizing: border-box;
+}
+
+.shape-top, .shape-tr-top {
+    background-color: #b8cde5;
+}
+
+.shape-left, .shape-tr-left {
+    background-color: #ffff00;
+}
+
+.shape-right, .shape-tr-right {
+    background-color: #d6006e;
+}
+
+
+.figure-container.position-method {
+    position: relative;
+    width: 340px;
+    height: 300px;
+    background-color: #ffffff;
+    border: 1px dashed #cccccc;
+    margin-bottom: 30px;
+}
+
+.position-method .shape-top {
+    position: absolute;
+    top: 20px;
+    left: 110px;
+    transform: rotate(45deg);
+}
+
+.position-method .shape-left {
+    position: absolute;
+    top: 140px;
+    left: 38px;
+    transform: rotate(12deg); 
+}
+
+.position-method .shape-right {
+    position: absolute;
+    top: 140px;
+    left: 180px;
+    transform: rotate(-12deg);
+}
+
+.figure-container.transform-method {
+    width: 340px;
+    height: 300px;
+    background-color: #ffffff;
+    border: 1px dashed #cccccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.transform-center {
+    position: relative;
+    width: 0;
+    height: 0;
+}
+
+.shape-tr-top {
+    position: absolute;
+    transform: translate(-60px, -120px) rotate(45deg);
+}
+
+.shape-tr-left {
+    position: absolute;
+    transform: translate(-130px, 0px) rotate(12deg);
+}
+
+.shape-tr-right {
+    position: absolute;
+    transform: translate(12px, -1px) rotate(-12deg);
+}

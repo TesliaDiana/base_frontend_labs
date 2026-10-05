@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №2 — Тесля Д. В. (ІМ-41, Варіант 3)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Лабораторна робота №2</h1>
+        <p>Тема: Таблиці в HTML-5. Створення зображень засобами трансформацій в CSS-3.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Завдання 1. Таблиця складної структури</h2>
+            <table class="variant-table">
+                <tr class="row-1">
+                    <td rowspan="2" class="cell-surname">Тесля</td>
+                    <td class="cell-firstname">Діана</td>
+                    <td colspan="2" rowspan="2" class="cell-patronymic">Валеріївна</td>
+                </tr>
+                <tr class="row-2">
+                    <td class="cell-info">Група ІМ-41 Лаб №2 Варіант 3</td>
+                </tr>
+                <tr class="row-3">
+                    <td>Пусто</td>
+                    <td>Пусто</td>
+                    <td>Пусто</td>
+                    <td>Пусто</td>
+                </tr>
+                <tr class="row-4">
+                    <td>Пусто1</td>
+                    <td>Пусто</td>
+                    <td colspan="2">Пусто</td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Завдання 2. Графічна фігура</h2>
+
+            <h3>1. Створення фігури за допомогою властивості position</h3>
+            <div class="figure-container position-method">
+                <div class="shape shape-top"></div>
+                <div class="shape shape-left"></div>
+                <div class="shape shape-right"></div>
+            </div>
+
+            <h3>2. Створення фігури за допомогою властивості transform</h3>
+            <div class="figure-container transform-method">
+                <div class="transform-center">
+                    <div class="shape shape-tr-top"></div>
+                    <div class="shape shape-tr-left"></div>
+                    <div class="shape shape-tr-right"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
