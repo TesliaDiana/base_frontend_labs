@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript, DOM, getElementById, querySelector">
+    <meta name="description" content="Веб-сторінка з виконанням лабораторної роботи №4 з мови розмітки HTML5 та JavaScript.">
+    <title>Тесля Д.В. група ІМ-41 — Лаб. №4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Інформація про автора сторінки</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Тесля Діана Валеріївна</h2>
+            <p>Дата народження: 14 вересня 2007 року. Місце народження: м. Чернігів, Україна.</p>
+            <p>Освіта: Навчалась в Чернігівській спеціалізованій загальноосвітній школі (СЗОШ) з поглибленим вивченням іноземних мов. Наразі навчаюся у Київському політехнічному інституті імені Ігоря Сікорського на спеціальності «Інженерія програмного забезпечення».</p>
+        </section>
+
+        <section>
+            <h3 id="element-4">Хоббі:</h3>
+            <ul>
+                <li id="element-5">Граю на музичних інструментах (фортепіано, гітара).</li>
+                <li>Граю у відеоігри.</li>
+                <li>Створення відео.</li>
+                <li>Читання манхв.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Мої улюблені ігри:</h3>
+            <ol>
+                <li>Don't Starve Together - кооперативне виживання.</li>
+                <li>Don't Starve - соло виживання.</li>
+                <li>PEAK - підйом на гору з друзями.</li>
+                <li>Slay the Spire - карточний roguelike</li>
+            </ol>
+        </section>
+
+        <section>
+            <h3>Моє улюблене місто — Чернігів</h3>
+            <p>Це місто в Чернігівській області в Україні. Тут я народилася та росла. Мені подобається його малонаселеність та можливість приємно проводити час.</p>
+
+            <p><em>Клацнувши на фото нижче можна перейти на Офіційний веб-портал Чернігівської міської ради.</em></p>
+
+            <div id="image-container">
+                <a id="city-link" href="https://www.chernigiv-rada.gov.ua/" target="_blank" rel="noopener noreferrer">
+                    <img id="city-image"
+                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS40ZXxoOcN3REZHVfbMo3-I-yz-xfMumYkHF0ZXpTQsoL8Lb4CoC8MCZw&s=10"
+                         alt="Гарне фото Чернігова з валу."
+                         width="600">
+                </a>
+            </div>
+
+            <div class="image-controls">
+                <button id="btn-add">Додати</button>
+                <button id="btn-grow">Збільшити</button>
+                <button id="btn-shrink">Зменшити</button>
+                <button id="btn-remove">Видалити</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
