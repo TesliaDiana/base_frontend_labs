@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="JavaScript, DOM, Events, Regex, Form Validation, HTML5, CSS3, КПІ">
+    <meta name="description" content="Лабораторна робота №5 з дисципліни Основи FE-технологій">
+    <title>Тесля Д.В., група ІМ-41, Лабораторна робота №5, Варіант 33</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="page-container">
+        <section class="task-section">
+            <div class="form-wrapper">
+                <div class="form-column">
+                    <h2>Форма для заповнення</h2>
+                    <form id="valForm" onsubmit="return validateForm(event)">
+                        <div class="field-row" id="row-fullname">
+                            <label for="fullname">ПІБ:</label>
+                            <input type="text" id="fullname" placeholder="Тесля Д.В.">
+                        </div>
+
+                        <div class="field-row" id="row-phone">
+                            <label for="phone">Телефон:</label>
+                            <input type="text" id="phone" placeholder="(099)-123-45-67">
+                        </div>
+
+                        <div class="field-row" id="row-idcard">
+                            <label for="idcard">ID-card:</label>
+                            <input type="text" id="idcard" placeholder="АБ №123456">
+                        </div>
+
+                        <div class="field-row" id="row-faculty">
+                            <label for="faculty">Факультет:</label>
+                            <input type="text" id="faculty" placeholder="ФІОТ">
+                        </div>
+
+                        <div class="field-row" id="row-dob">
+                            <label for="dob">Дата народження:</label>
+                            <input type="text" id="dob" placeholder="ДД.ММ.РРРР">
+                        </div>
+
+                        <input type="submit" value="Підтвердити" class="btn-submit">
+                    </form>
+                </div>
+
+                <div class="output-column" id="outputColumn">
+                    <h2>Введені дані</h2>
+                    <div id="outputContent"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="task-section">
+            <h2>Інтерактивна таблиця 6x6 (Клітинка №4)</h2>
+            <div class="color-picker-wrapper">
+                <input type="color" id="colorPicker" value="#00aaff">
+            </div>
+
+            <table id="matrixTable" class="grid-table">
+            </table>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
