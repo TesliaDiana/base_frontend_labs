@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/base_frontend_labs/lab7/build/static/css/main.e8b193f8.css",
+    "main.js": "/base_frontend_labs/lab7/build/static/js/main.3abc7301.js",
+    "index.html": "/base_frontend_labs/lab7/build/index.html",
+    "main.e8b193f8.css.map": "/base_frontend_labs/lab7/build/static/css/main.e8b193f8.css.map",
+    "main.3abc7301.js.map": "/base_frontend_labs/lab7/build/static/js/main.3abc7301.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e8b193f8.css",
+    "static/js/main.3abc7301.js"
+  ]
+}
