@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML5, CSS3, Flexbox, CSS Grid, Responsive Design, Верстка сайту, КПІ">
+    <meta name="description" content="Лабораторна робота №8 з дисципліни Основи FE-технологій — адаптивна верстка сайту за зразком (Варіант 3).">
+    <title>Тесля Д.В., група ІМ-41, Лабораторна робота №8, Варіант 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hero-section" id="home">
+        <div class="hero-overlay">
+            <div class="container">
+                <nav class="navbar">
+                    <a href="#home" class="logo">
+                        <span class="logo-icon">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                                <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                                <polyline points="2 17 12 22 22 17"></polyline>
+                                <polyline points="2 12 12 17 22 12"></polyline>
+                            </svg>
+                        </span>
+                        <span>Startup</span>
+                    </a>
+
+                    <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                    <label for="menu-toggle" class="burger-btn" aria-label="Відкрити меню">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+
+                    <ul class="nav-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#workflow">Process</a></li>
+                        <li><a href="#team">Team</a></li>
+                        <li class="mobile-only-link"><a href="#contact-modal">Say Hello</a></li>
+                    </ul>
+
+                    <a href="#contact-modal" class="say-hello">Say Hello</a>
+                </nav>
+
+                <div class="hero-content">
+                    <h1>Startup you can build a website online using the Bootstrap builder.</h1>
+                    <a href="#portfolio" class="btn-primary">Visit Our Works</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="services-section" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Services</span>
+                    <h2>With more than 20 years of experience we can deliver the best product design.</h2>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#615cfd" stroke-width="2">
+                                <polygon points="24 6 42 15 24 24 6 15 24 6"></polygon>
+                                <polyline points="6 24 24 33 42 24"></polyline>
+                                <polyline points="6 33 24 42 42 33"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Graphic design</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#615cfd" stroke-width="2">
+                                <rect x="6" y="8" width="36" height="28" rx="3"></rect>
+                                <line x1="6" y1="16" x2="42" y2="16"></line>
+                                <line x1="18" y1="40" x2="30" y2="40"></line>
+                                <line x1="24" y1="36" x2="24" y2="40"></line>
+                            </svg>
+                        </div>
+                        <h3>Web design</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.</p>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none" stroke="#615cfd" stroke-width="2">
+                                <rect x="13" y="5" width="22" height="38" rx="4"></rect>
+                                <line x1="21" y1="37" x2="27" y2="37"></line>
+                                <circle cx="24" cy="19" r="4"></circle>
+                            </svg>
+                        </div>
+                        <h3>Mobile app</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="about-split" id="about">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80"
+                     alt="Команда розробників працює над проєктом за ноутбуками">
+            </div>
+
+            <div class="about-content">
+                <span class="about-label">About Us</span>
+                <h2>Empowering individuals</h2>
+                <p class="about-lead">
+                    Efficiently unleash cross-media tour function information without cross action media value. Quickly maximize timely deliverables for real-time schemas.
+                </p>
+                <p class="about-text">
+                    Function information without cross action media value. Efficiently unleash cross-media tour function information without cross action media value.
+                </p>
+                <a href="#workflow" class="btn-primary">About Us</a>
+            </div>
+        </section>
+
+        <section class="portfolio-section" id="portfolio">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Works</h2>
+                    <p class="section-desc">
+                        Tour function information without cross action media value quickly maximize timely deliverables.
+                    </p>
+                </div>
+
+                <div class="portfolio-grid">
+                    <article class="portfolio-item span-8">
+                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&w=1000&q=80"
+                             alt="Мобільний застосунок Fintech">
+                        <div class="portfolio-overlay">
+                            <span>Mobile App</span>
+                            <h3>Fintech Mobile Interface</h3>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item span-4">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+                             alt="Веб-аналітика та інтерфейси">
+                        <div class="portfolio-overlay">
+                            <span>Web Platform</span>
+                            <h3>Digital Strategy Portal</h3>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item span-4">
+                        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80"
+                             alt="Проєктування інтерфейсів">
+                        <div class="portfolio-overlay">
+                            <span>UI/UX Design</span>
+                            <h3>Product Wireframing</h3>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item span-4">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=80"
+                             alt="Корпоративний простір">
+                        <div class="portfolio-overlay">
+                            <span>Branding</span>
+                            <h3>Modern Workspace Identity</h3>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-item span-4">
+                        <img src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=800&q=80"
+                             alt="Дизайн-студія">
+                        <div class="portfolio-overlay">
+                            <span>Web Design</span>
+                            <h3>Creative Studio System</h3>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="workflow-section" id="workflow">
+            <div class="container">
+                <div class="workflow-grid">
+                    <div class="workflow-text">
+                        <h2>How we work</h2>
+                        <p class="workflow-lead">
+                            “Function information without cross action media value.”
+                        </p>
+                        <p class="workflow-desc">
+                            Efficiently unleash cross-media tour function information without cross action media value. Quickly maximize timely deliverables for real-time schemas.
+                        </p>
+                          <a href="#video-modal" class="video-trigger" id="open-video-btn">
+                              <span class="play-circle">
+                                  <svg width="16" height="16" viewBox="0 0 24 24" fill="#ffffff">
+                                      <polygon points="6 4 20 12 6 20 6 4"></polygon>
+                                  </svg>
+                              </span>
+                              <span>Watch Video</span>
+                          </a>
+                    </div>
+
+                    <div class="workflow-media">
+                        <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&w=900&q=80"
+                             alt="Тестування продукту у VR-шоломі (насправді пісні)">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-section" id="team">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Creative Team</h2>
+                    <p class="section-desc">
+                        Tour function information without cross action media value quickly maximize timely deliverables.
+                    </p>
+                </div>
+
+                <div class="team-grid">
+                    <article class="team-card">
+                        <div class="team-photo">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80"
+                                 alt="Brandon Yeald — Founder & CEO">
+                        </div>
+                        <h3>Brandon Yeald</h3>
+                        <p>Founder &amp; CEO</p>
+                    </article>
+
+                    <article class="team-card">
+                        <div class="team-photo">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=600&q=80"
+                                 alt="Calvin Anderson — Graphics Designer">
+                        </div>
+                        <h3>Calvin Anderson</h3>
+                        <p>Graphics Designer</p>
+                    </article>
+
+                    <article class="team-card">
+                        <div class="team-photo">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80"
+                                 alt="Roman Solo — Wordpress Developer">
+                        </div>
+                        <h3>Roman Solo</h3>
+                        <p>Wordpress Developer</p>
+                    </article>
+
+                    <article class="team-card">
+                        <div class="team-photo">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80"
+                                 alt="Yeald Kin — Software Engineer">
+                        </div>
+                        <h3>Yeald Kin</h3>
+                        <p>Software Engineer</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+        <div class="container">
+            <div class="footer-top">
+                <a href="#home" class="logo">
+                    <span class="logo-icon">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                            <polyline points="2 17 12 22 22 17"></polyline>
+                            <polyline points="2 12 12 17 22 12"></polyline>
+                        </svg>
+                    </span>
+                    <span>Startup</span>
+                </a>
+
+                <ul class="footer-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#team">Team</a></li>
+                </ul>
+
+                <div class="footer-socials">
+                    <a href="#contact-modal" aria-label="Facebook">FB</a>
+                    <a href="#contact-modal" aria-label="Twitter">TW</a>
+                    <a href="#contact-modal" aria-label="Instagram">IG</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Тесля Діана Валеріївна, група ІМ-41. Лабораторна робота №8 (Варіант 3).</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="contact-modal" class="modal-backdrop">
+        <div class="modal-box">
+            <a href="#close" class="modal-close" aria-label="Закрити">&times;</a>
+            <h3>Say Hello</h3>
+            <p class="modal-subtitle">Залиште заявку, і ми зв'яжемося з вами щодо вашого проєкту.</p>
+            <form action="#close" class="modal-form">
+                <input type="text" placeholder="Ваше ім'я" required>
+                <input type="email" placeholder="Ваш E-mail" required>
+                <textarea rows="3" placeholder="Опишіть ідею проєкту..." required></textarea>
+                <button type="submit" class="btn-primary modal-submit">Надіслати</button>
+            </form>
+        </div>
+    </div>
+        <div id="video-modal" class="modal-backdrop">
+            <div class="modal-box video-box">
+                <a href="#close" class="modal-close" id="close-video-btn" aria-label="Закрити">&times;</a>
+                <h3>How We Work — Video</h3>
+                <div class="video-container">
+                    <iframe
+                        id="workflow-video"
+                        src=""
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-caption">
+                    <a href="https://www.youtube.com/watch?v=B4EkwueekvI" target="_blank" rel="noopener noreferrer">Перейти на youtube</a>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            const openVideoBtn = document.getElementById('open-video-btn');
+            const closeVideoBtn = document.getElementById('close-video-btn');
+            const videoModal = document.getElementById('video-modal');
+            const workflowVideo = document.getElementById('workflow-video');
+
+            const VIDEO_EMBED_URL = 'https://www.youtube.com/embed/B4EkwueekvI?autoplay=1';
+
+            function openVideoModal() {
+                workflowVideo.src = VIDEO_EMBED_URL;
+                document.body.classList.add('modal-open');
+            }
+
+            function closeVideoModal() {
+                workflowVideo.src = '';
+                document.body.classList.remove('modal-open');
+            }
+
+            openVideoBtn.addEventListener('click', openVideoModal);
+            closeVideoBtn.addEventListener('click', closeVideoModal);
+
+            videoModal.addEventListener('click', (event) => {
+                if (event.target === videoModal) {
+                    closeVideoModal();
+                    window.location.hash = 'close';
+                }
+            });
+
+            window.addEventListener('hashchange', () => {
+                if (window.location.hash !== '#video-modal') {
+                    closeVideoModal();
+                }
+            });
+        </script>
+</body>
+</html>
